@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nabu</groupId>
 	<artifactId>utils</artifactId>
-	<version>1.1</version>
+	<version>${nabu-utils-version}</version>
 	<name>utils</name>
 	
 	<parent>
