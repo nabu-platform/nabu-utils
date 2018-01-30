@@ -1,0 +1,36 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" disabled="false" id="b6f34667-9619-4610-886d-c416f550988e">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map" disabled="false" label="input/onCommit" id="831f8776-d021-4b46-933a-f5af6055aebd">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke" disabled="false" id="a1ce053d-a95d-411f-8659-ceb5bd8faf80" temporaryMapping="true" invocationOrder="0" serviceId="nabu.utils.Transaction.onCommit" resultName="resulte8f9bf790339415d9908a6dc9d205893" y="92" x="29">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link" disabled="false" id="dcd2d18c-3c3f-4189-b8f1-beaff60b6b6c" optional="false" mask="false" fixedValue="false">
+				<from>input/serviceId</from>
+				<to>serviceId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link" disabled="false" id="e6e986c8-c0d6-4d3f-8b66-cfd6d0121648" optional="false" mask="false" fixedValue="false">
+				<from>input/input</from>
+				<to>input</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link" disabled="false" id="05f1a927-21fc-404a-b8a9-1b974cc697b0" optional="false" mask="false" fixedValue="false">
+				<from>input/transactionId</from>
+				<to>transactionId</to>
+			</steps>
+			<asynchronous>false</asynchronous>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map" disabled="false" label="input/onRollback" id="1e215a9e79ba4150b2204ea99f1addbf">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke" disabled="false" id="f9a6a8bd-51c0-4425-9632-d5536719961e" temporaryMapping="true" invocationOrder="0" serviceId="nabu.utils.Transaction.onRollback" resultName="resultda87fdc31e8a49cb9a0826e910064732" y="56" x="40">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link" disabled="false" id="3010e948-3262-4697-b5be-121b43e42812" optional="false" mask="false" fixedValue="false">
+				<from>input/serviceId</from>
+				<to>serviceId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link" disabled="false" id="9214bce7-550f-4934-b5e1-8cd44b77b3d5" optional="false" mask="false" fixedValue="false">
+				<from>input/input</from>
+				<to>input</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link" disabled="false" id="91d9eaa8-4397-4fc2-81bf-08078a19a8e6" optional="false" mask="false" fixedValue="false">
+				<from>input/transactionId</from>
+				<to>transactionId</to>
+			</steps>
+			<asynchronous>false</asynchronous>
+		</steps>
+	</steps>
+</sequence>

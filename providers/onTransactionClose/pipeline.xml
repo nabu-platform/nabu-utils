@@ -1,0 +1,8 @@
+<structure interface="be.nabu.eai.module.services.vm.api.ServiceExecutor.execute" name="pipeline">
+    <structure name="input">
+        <field minOccurs="0" name="transactionId" type="java.lang.String"/>
+        <field minOccurs="0" name="onCommit" type="java.lang.Boolean"/>
+        <field minOccurs="0" name="onRollback" type="java.lang.Boolean"/>
+    </structure>
+    <structure name="output"/>
+</structure>
