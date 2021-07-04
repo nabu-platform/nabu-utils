@@ -1,0 +1,21 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="9126560e-8fa1-4b96-9b40-570f467bb444">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="68785455-a0cf-4c08-9600-115f708eb0f2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="cf1ffd0e-7951-4d22-8b0f-37701df5fb36"
+				serviceId="nabu.utils.Server.bringOffline"
+				resultName="resultf0359f3fd05d436f94a8673c4516243a"
+				temporaryMapping="true"
+				x="30"
+				y="30"
+				invocationOrder="0"
+				target="$all"
+				asynchronous="false"
+				recache="false">
+		</steps>
+	</steps>
+</sequence>
