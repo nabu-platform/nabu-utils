@@ -1,0 +1,10 @@
+<structure name="pipeline">
+    <structure name="input">
+        <structure definition="java.lang.Object" minOccurs="0" name="properties"/>
+        <field minOccurs="0" name="asKeyValues" type="java.lang.Boolean"/>
+    </structure>
+    <structure name="output">
+        <field name="properties" type="java.lang.String"/>
+    </structure>
+    <structure definition="nabu.utils.reflection.properties.propertyList" name="keyValues"/>
+</structure>
