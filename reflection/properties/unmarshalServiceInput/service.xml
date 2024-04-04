@@ -64,13 +64,15 @@
 			id="0db95a8315324691899a11e4e42c8833"
 			label="!parameter"
 			lineNumber="5"
-			message="Could not find properties parameter" xsi:nil="true"/>
+			message="Could not find properties parameter"
+			whitelist="false" xsi:nil="true"/>
 	<steps xsi:type="be.nabu.libs.services.vm.step.Throw"
 			disabled="false"
 			id="d8941d6d3ccf43c0a3a0a57542403586"
 			label="parameter/type == &quot;java.lang.Object&quot;"
 			lineNumber="6"
-			message="Generic objects can't be parsed" xsi:nil="true"/>
+			message="Generic objects can't be parsed"
+			whitelist="false" xsi:nil="true"/>
 	<steps xsi:type="be.nabu.libs.services.vm.step.Switch"
 			disabled="false"
 			id="bb1a6be4198f40a6b5b67ed2a771e702"

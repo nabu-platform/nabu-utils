@@ -6,7 +6,7 @@
         <field minOccurs="0" name="asKeyValues" type="java.lang.Boolean"/>
     </structure>
     <structure name="output">
-        <structure definition="java.lang.Object" minOccurs="0" name="properties"/>
+        <structure collectionCrudProvider="odata" collectionName="teamsTemplates" definition="java.lang.Object" minOccurs="0" name="properties"/>
     </structure>
     <structure definition="nabu.utils.types.ParameterDescription" minOccurs="0" name="parameter"/>
     <structure definition="nabu.utils.reflection.properties.propertyList" name="keyValues"/>
