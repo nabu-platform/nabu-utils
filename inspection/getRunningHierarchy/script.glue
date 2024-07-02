@@ -1,0 +1,28 @@
+map = structure()
+all = be.nabu.libs.services.ServiceRuntime.getRunning()
+
+all = sort(lambda(a, b, a/started - b/started), all)
+
+resolveId = lambda(running, when(running/service/id == null, be.nabu.libs.services.ServiceUtils.unwrap(running/service)/id, running/service/id))
+
+# initial pass to build all items
+for (running : all)
+	map = structure(map, lambda(running/id): structure(service: resolveId(running), children: series(), id: running/id, declarationId: running/input/path/declarationId, started: running/started, input: when(running/service/id == "nabu.frameworks.locks.crud.lockInstance.types.output:generated.update", running/input)))
+
+# link it back
+for (running : all)
+	parent = running/getParent()
+	if (parent != null)
+		map[/parent/id]/children = resolve(merge(map[/parent/id]/children, map[/running/id]))
+		
+result = structure()
+# remove all non children
+for (running : all)
+	parent = running/getParent()
+	if (parent == null)
+		result = structure(result, lambda(running/id): map[/running/id])
+		
+captureEcho()
+echo(json.stringify(result, pretty: true))
+@return
+string string = releaseEcho()
