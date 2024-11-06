@@ -9,11 +9,18 @@
 			lineNumber="2">
 		<count>1</count>
 	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Break"
+			disabled="false"
+			id="a5f1fb26cf654557a84819eceb7c13f7"
+			label="input/serviceId == null"
+			lineNumber="3">
+		<count>1</count>
+	</steps>
 	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
 			disabled="false"
 			id="9590c9f29b75499b9e36f584f1810d9b"
 			label="input/field == null"
-			lineNumber="3">
+			lineNumber="4">
 		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 				disabled="false"
 				id="9c14ca6b856f4a598206e4a69f7b24c5"
@@ -27,7 +34,7 @@
 	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
 			disabled="false"
 			id="d6c8adea53e04b33adf221bdd46e990d"
-			lineNumber="4">
+			lineNumber="5">
 		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
 				disabled="false"
 				id="536612428c6a40668fab5ec426886f0d"
@@ -63,30 +70,30 @@
 			disabled="false"
 			id="0db95a8315324691899a11e4e42c8833"
 			label="!parameter"
-			lineNumber="5"
+			lineNumber="6"
 			message="Could not find properties parameter"
 			whitelist="false" xsi:nil="true"/>
 	<steps xsi:type="be.nabu.libs.services.vm.step.Throw"
 			disabled="false"
 			id="d8941d6d3ccf43c0a3a0a57542403586"
 			label="parameter/type == &quot;java.lang.Object&quot;"
-			lineNumber="6"
+			lineNumber="7"
 			message="Generic objects can't be parsed"
 			whitelist="false" xsi:nil="true"/>
 	<steps xsi:type="be.nabu.libs.services.vm.step.Switch"
 			disabled="false"
 			id="bb1a6be4198f40a6b5b67ed2a771e702"
-			lineNumber="7"
+			lineNumber="8"
 			query="input/asKeyValues">
 		<steps xsi:type="be.nabu.libs.services.vm.step.Sequence"
 				disabled="false"
 				id="f431d5d07f1c4a42ac5c4a9cb4b58862"
 				label="true"
-				lineNumber="8">
+				lineNumber="9">
 			<steps xsi:type="be.nabu.libs.services.vm.step.Map"
 					disabled="false"
 					id="fc9ce77b170c411d87563d695bd3215e"
-					lineNumber="9">
+					lineNumber="10">
 				<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
 						disabled="false"
 						id="19de7cfa8f914bdc8b148d38a696525f"
@@ -130,7 +137,7 @@
 			<steps xsi:type="be.nabu.libs.services.vm.step.Map"
 					disabled="false"
 					id="0e58625a9af344449365b4ae109ad6d5"
-					lineNumber="10">
+					lineNumber="11">
 				<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
 						disabled="false"
 						id="2af53f5264b44a87a6f1c4656b1a5693"
@@ -175,7 +182,7 @@
 		<steps xsi:type="be.nabu.libs.services.vm.step.Map"
 				disabled="false"
 				id="ff422a8a98764cf5855bfdca3a8f4b8b"
-				lineNumber="11">
+				lineNumber="12">
 			<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
 					disabled="false"
 					id="2318699df4b147c8a20b4b6ec52e5926"
