@@ -1,0 +1,4 @@
+integer id ?= null
+for (runtime : be.nabu.libs.services.ServiceRuntime.getRunning())
+	if (runtime/id == id)
+		runtime/abort()
