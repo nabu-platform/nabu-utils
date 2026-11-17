@@ -1,1 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><maven><artifacts>nabu:eai-module-utils</artifacts><internalDomains>nabu</internalDomains><updateSnapshots>false</updateSnapshots></maven>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<maven>
+	<artifacts>nabu:eai-module-utils</artifacts>
+	<encapsulated>true</encapsulated>
+	<internalDomains>nabu</internalDomains>
+	<updateSnapshots>false</updateSnapshots>
+</maven>
